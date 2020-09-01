@@ -1,0 +1,42 @@
+#messagebox {
+  position: absolute;
+  color: white;
+  border: white;
+  background: white;
+  width: 50%;
+  height: 75%;
+  border-style: double;
+  margin: 1% 25%;
+  bottom: 10%;
+}
+
+#messagebox .messageWriting {
+  position: absolute;
+  outline: none;
+  border: double;
+  color: black;
+  background: gray;
+  font-size: 20px;
+  height: 5%;
+  left: 1%;
+  bottom: 3%;
+  padding: 1%;
+  width: 90%;
+  border-radius: 30px 30px 30px 30px;
+}
+
+#messagebox .messageWriting::placeholder {
+  color: black;
+}
+
+#messagebox .sendIcon {
+  position: absolute;
+  left: 94%;
+  bottom: 2.9%;
+  width: auto;
+}
+
+#messagebox .sendIcon mat-icon {
+  color: black;
+  font-size: 35px;
+}

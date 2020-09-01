@@ -1,0 +1,27 @@
+p {
+  color: white;
+}
+.picture {
+  position: absolute;
+  color: white;
+  border: white;
+  width: 25%;
+  height: 50%;
+  border-style: double;
+  margin: 1% 33%;
+  bottom: 40%;
+}
+#clothesPic {
+  position: absolute;
+  visibility: visible;
+}
+#clothesPic:hover {
+  visibility: hidden;
+}
+#clothesPic:hover #nakedPic{
+  visibility: visible;
+}
+#clothesPic:not(:hover) #nakedPic{
+  position: absolute;
+  visibility: hidden;
+}
