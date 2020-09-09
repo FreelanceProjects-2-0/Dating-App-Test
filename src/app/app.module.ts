@@ -16,6 +16,7 @@ import { MessageboardComponent } from './messageboard/messageboard.component';
 import { MatchingComponent } from './matching/matching.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { UserdataComponent } from './userdata/userdata.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { RegisterComponent } from './register/register.component';
     MatchingComponent,
     LoginComponent,
     RegisterComponent,
+    UserdataComponent,
   ],
   imports: [
     BrowserModule,

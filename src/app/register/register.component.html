@@ -1,108 +1,38 @@
 <div class="parent">
   <div class="child">
     <form action="" id="RegisterForm">
-      <label for="firstName">First Name:</label> <br>
-      <input type="text" id="firstName"> <br> <br>
-      <label for="lastName">Last Name:</label> <br>
-      <input type="text" id="lastName"> <br> <br>
-      <label for="Email">Email:</label> <br> 
-      <input type="email" id="email"> <br> <br>
-      <label for="birth_div">Birth Date:</label> <br>
-      <div id="birth_div">
-        <input type="text" placeholder="dd" id="dayInput" maxlength="2">
-        <input type="text" placeholder="mm" id="monthInput" maxlength="2">
-        <input type="text" placeholder="yyyy" id="yearInput" minlength="4" maxlength="4">
+      <div class="newSegment">
+        <label for="firstName">First Name:</label> <br>
+        <input type="text" id="firstName" placeholder="First Name">
       </div>
-      <br>
-      <label for="gender_div">Gender:</label> <br>
-      <div id="gender_div">
-        <input type="radio" name="" id="">Male <br>
-        <input type="radio" name="" id="">Female <br>
+      <div class="newSegment">
+        <label for="lastName">Last Name:</label> <br>
+        <input type="text" id="lastName" placeholder="Last Name">
       </div>
-      <br>
+      <div class="newSegment">
+        <label for="Email">Email:</label> <br>
+        <input type="email" id="email" placeholder="Email">
+      </div>
+      <div class="newSegment">
+        <label for="birth_div">Birth Date:</label> <br>
+        <div id="birth_div">
+          <input type="text" placeholder="dd" id="dayInput" maxlength="2">
+          <input type="text" placeholder="mm" id="monthInput" maxlength="2">
+          <input type="text" placeholder="yyyy" id="yearInput" minlength="4" maxlength="4">
+        </div>
+      </div>
+      <div class="newSegment">
+        <label for="gender_div">Gender:</label> <br>
+          <input type="radio" id="male" name="gender" value="1"> Male <br>
+          <input type="radio" id="female" name="gender" value="0"> Female
+      </div>
       <label for="password">Password:</label><br>
-      <input type="password" name="" id="">
+      <input type="password" placeholder="Password"> <br>
+      <label for="password">Confirm Password:</label><br>
+      <input type="password" placeholder="Confirm Password">
       <br>
-      <input type="submit" value="Create Account">
+      <input type="submit" value="Create Account" routerLink="/userdata">
     </form>
+    <button id="loginButton" routerLink="/login">Login</button>
   </div>
 </div>
-<!--
-<div class="parent">
-  <div class="child">
-    <form action="" id="RegisterForm">
-      <label for="firstName">First Name:</label> <br>
-      <input type="text" id="firstName"> <br>
-      <label for="lastName">Last Name:</label> <br>
-      <input type="text" id="lastName"> <br>
-      <label for="Email">Email:</label> <br>
-      <input type="email" id="email"> <br>
-      <label for="">Birth Date:</label> <br>
-      <select name="Date" id="">
-        <option value="" disabled selected hidden>Day</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-        <option value="11">11</option>
-        <option value="12">12</option>
-        <option value="13">13</option>
-        <option value="14">14</option>
-        <option value="15">15</option>
-        <option value="16">16</option>
-        <option value="17">17</option>
-        <option value="18">18</option>
-        <option value="19">19</option>
-        <option value="20">20</option>
-        <option value="21">21</option>
-        <option value="22">22</option>
-        <option value="23">23</option>
-        <option value="24">24</option>
-        <option value="25">25</option>
-        <option value="26">26</option>
-        <option value="27">27</option>
-        <option value="28">28</option>
-        <option value="29">29</option>
-        <option value="30">30</option>
-        <option value="31">31</option>
-      </select>
-      <select name="Month" id="">
-        <option value="" disabled selected hidden>Month</option>
-        <option value="1">January</option>
-        <option value="2">February</option>
-        <option value="3">March</option>
-        <option value="4">April</option>
-        <option value="5">May</option>
-        <option value="6">June</option>
-        <option value="7">July</option>
-        <option value="8">August</option>
-        <option value="9">September</option>
-        <option value="10">October</option>
-        <option value="11">November</option>
-        <option value="12">December</option>
-      </select>
-      <input type="text" id="year" minlength="4" maxlength="4" max="{{yearMax}}" min="{{yearMin}}" placeholder="Year"> <br>
-      <label for="Gender">Gender:</label> <br>
-      <input type="radio"> Male <br>
-      <input type="radio"> Female <br>
-    </form>
-  </div>
-</div>
-First Name
-Last Name
-Email
-Birth Date
-Gender
-
-Username
-Password
-
-
-
--->
