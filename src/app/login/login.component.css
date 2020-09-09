@@ -14,7 +14,11 @@
   display: grid;
   place-items: center;
 
-  background: black;
+  background: rgb(63,94,251);
+  background: -moz-radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endColorstr="#fc466b",GradientType=1);
   width: 100%;
   height: 100%;
 
@@ -24,7 +28,25 @@
 .child {
   padding: 0.5rem;
   border-radius: 10px;
-  background: rgba(211, 211, 211, 0.637);
+  
+  background: rgba(255, 255, 255, 0.4);
+  
   font-size: 1rem;
-  text-align: center;
+}
+input[type="submit"] {
+  padding: .5rem;
+  width:100%;
+  margin-bottom: 5%;
+}
+input[type="text"] {
+  padding: .5rem;
+  margin-bottom: 5%;
+}
+input[type="password"] {
+  padding: .5rem;
+  margin-bottom: 5%;
+}
+button {
+  width: 100%;
+  padding: .5rem;
 }
