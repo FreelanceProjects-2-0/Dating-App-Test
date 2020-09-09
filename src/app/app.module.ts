@@ -1,6 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
+import { FormsModule, FormControl } from '@angular/forms';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonsComponent } from './buttons/buttons.component';
@@ -27,6 +32,11 @@ import { RegisterComponent } from './register/register.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
+    HttpClientModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    FormsModule,
+    MatDatepickerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

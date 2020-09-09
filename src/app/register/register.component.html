@@ -1,15 +1,138 @@
 <div class="parent">
-  <div class="child" contenteditable>
-    <form action="" id="loginForm">
-      <label for="userName" style="color:black">Username:</label><br>
-      <input type="text" id="userName"> <br>
-      <label for="password" style="color:black">Password:</label><br>
-      <input type="password" id="password"><br>
-      <input type="submit" value="Login" style="float: right">
+  <div class="child">
+    <form>
+      <h4>mat-select</h4>
+      <mat-form-field appearance="fill">
+        <mat-label>Day</mat-label>
+        <mat-select>
+          <mat-option value="1">1</mat-option>
+          <mat-option value="2">2</mat-option>
+          <mat-option value="3">3</mat-option>
+          <mat-option value="4">4</mat-option>
+          <mat-option value="5">5</mat-option>
+          <mat-option value="6">6</mat-option>
+          <mat-option value="7">7</mat-option>
+          <mat-option value="8">8</mat-option>
+          <mat-option value="9">9</mat-option>
+          <mat-option value="10">10</mat-option>
+          <mat-option value="11">11</mat-option>
+          <mat-option value="12">12</mat-option>
+          <mat-option value="13">13</mat-option>
+          <mat-option value="14">14</mat-option>
+          <mat-option value="15">15</mat-option>
+          <mat-option value="16">16</mat-option>
+          <mat-option value="17">17</mat-option>
+          <mat-option value="18">18</mat-option>
+          <mat-option value="19">19</mat-option>
+          <mat-option value="20">20</mat-option>
+          <mat-option value="21">21</mat-option>
+          <mat-option value="22">22</mat-option>
+          <mat-option value="23">23</mat-option>
+          <mat-option value="24">24</mat-option>
+          <mat-option value="25">25</mat-option>
+          <mat-option value="26">26</mat-option>
+          <mat-option value="27">27</mat-option>
+          <mat-option value="28">28</mat-option>
+          <mat-option value="29">29</mat-option>
+          <mat-option value="30">30</mat-option>
+          <mat-option value="31">31</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Month</mat-label>
+        <mat-select>
+          <mat-option value="1">January</mat-option>
+          <mat-option value="2">February</mat-option>
+          <mat-option value="3">March</mat-option>
+          <mat-option value="4">April</mat-option>
+          <mat-option value="5">May</mat-option>
+          <mat-option value="6">June</mat-option>
+          <mat-option value="7">July</mat-option>
+          <mat-option value="8">August</mat-option>
+          <mat-option value="9">September</mat-option>
+          <mat-option value="10">October</mat-option>
+          <mat-option value="11">November</mat-option>
+          <mat-option value="12">December</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+        <mat-label>Verbose datepicker</mat-label>
+        <input matInput [matDatepicker]="dp" [formControl]="date">
+        <mat-datepicker-toggle matSuffix [for]="dp"></mat-datepicker-toggle>
+        <mat-datepicker #dp></mat-datepicker>
+      </mat-form-field>
     </form>
   </div>
 </div>
+
 <!--
+<div class="parent">
+  <div class="child">
+    <form action="" id="RegisterForm">
+      <label for="firstName">First Name:</label> <br>
+      <input type="text" id="firstName"> <br>
+      <label for="lastName">Last Name:</label> <br>
+      <input type="text" id="lastName"> <br>
+      <label for="Email">Email:</label> <br>
+      <input type="email" id="email"> <br>
+      <label for="">Birth Date:</label> <br>
+      <select name="Date" id="">
+        <option value="" disabled selected hidden>Day</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+      </select>
+      <select name="Month" id="">
+        <option value="" disabled selected hidden>Month</option>
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+      </select>
+      <input type="text" id="year" minlength="4" maxlength="4" max="{{yearMax}}" min="{{yearMin}}" placeholder="Year"> <br>
+      <label for="Gender">Gender:</label> <br>
+      <input type="radio"> Male <br>
+      <input type="radio"> Female <br>
+    </form>
+  </div>
+</div>
 First Name
 Last Name
 Email

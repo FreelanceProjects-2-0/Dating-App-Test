@@ -16,3 +16,18 @@
   font-size: 1rem;
   text-align: center;
 }
+label {
+  float: left;
+}
+#year {
+  width: 20%;
+}
+input[type="text"] {
+  padding: .5rem;
+}
+input[type="email"] {
+  padding: .5rem;
+}
+select {
+  padding: 0.45rem;
+}
