@@ -28,6 +28,30 @@ input[type="text"] {
 input[type="email"] {
   padding: .5rem;
 }
+input[type="password"] {
+  padding: .5rem;
+}
+input[type="submit"] {
+  padding: .5rem;
+  width: 100%;
+  
+}
+
 select {
   padding: 0.45rem;
+}
+
+#birth_div #dayInput {
+  width: 2vw;
+  text-align: center;
+}
+
+#birth_div #monthInput {
+  width: 2.6vw;
+  text-align: center;
+}
+
+#birth_div #yearInput {
+  width: 3vw;
+  text-align: center;
 }
