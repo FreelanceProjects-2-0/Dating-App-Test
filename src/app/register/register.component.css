@@ -6,7 +6,7 @@
   background: -webkit-radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
   background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3f5efb",endColorstr="#fc466b",GradientType=1);
- 
+
   width: 100%;
   height: 100%;
   
@@ -14,7 +14,10 @@
 }
 
 .child {
-  padding: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.4);
   
@@ -49,17 +52,17 @@ select {
 }
 
 #birth_div #dayInput {
-  width: 2vw;
+  width: 2.5vw;
   text-align: center;
 }
 
 #birth_div #monthInput {
-  width: 2.6vw;
+  width: 3vw;
   text-align: center;
 }
 
 #birth_div #yearInput {
-  width: 3vw;
+  width: 3.5vw;
   text-align: center;
 }
 .newSegment {
